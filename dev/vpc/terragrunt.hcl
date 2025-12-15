@@ -11,7 +11,7 @@ terraform {
 }
 
 inputs = {
-  vpc_cidr           = "10.0.0.0/16"
+  vpc_cidr           = "10.1.0.0/16"
   cluster_name       = "dev-eks-cluster"
   single_nat_gateway = true # Cost optimization for dev
 }
