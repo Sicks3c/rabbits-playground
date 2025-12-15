@@ -25,7 +25,7 @@ inputs = {
   # ARM node group configuration
   arm_instance_types = ["t4g.large", "t4g.xlarge"]
   arm_desired_size   = 3
-  arm_max_size       = 10
+  arm_max_size       = 50
   arm_min_size       = 3
   capacity_type      = "ON_DEMAND" # Use ON_DEMAND for production
 
