@@ -22,8 +22,8 @@ inputs = {
   public_subnet_ids      = dependency.vpc.outputs.public_subnet_ids
   endpoint_public_access = false # Restrict API access for production
 
-  # ARM node group configuration
-  arm_instance_types = ["t4g.large", "t4g.xlarge"]
+  # Node group configuration - switched to t3 for compatibility
+  arm_instance_types = ["t3.large", "t3.xlarge"]
   arm_desired_size   = 3
   arm_max_size       = 10
   arm_min_size       = 3
